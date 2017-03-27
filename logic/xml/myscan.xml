@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Mon Mar 27 21:49:26 2017 as: nmap -sP -oX myscan.xml 192.168.150.1-10 -->
+<nmaprun scanner="nmap" args="nmap -sP -oX myscan.xml 192.168.150.1-10" start="1490622566" startstr="Mon Mar 27 21:49:26 2017" version="6.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.1" addrtype="ipv4"/>
+<address addr="0C:C4:7A:95:AF:60" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="172" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.2" addrtype="ipv4"/>
+<address addr="FC:4D:D4:36:86:18" addrtype="mac" vendor="Universal Global Scientific Industrial Co."/>
+<hostnames>
+</hostnames>
+<times srtt="507" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.3" addrtype="ipv4"/>
+<address addr="00:25:90:EB:02:9B" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+<times srtt="197" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.4" addrtype="ipv4"/>
+<address addr="E4:11:5B:12:D4:91" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+</hostnames>
+<times srtt="192" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.5" addrtype="ipv4"/>
+<address addr="00:0A:F7:8A:DC:5B" addrtype="mac" vendor="Broadcom"/>
+<hostnames>
+</hostnames>
+<times srtt="170" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.6" addrtype="ipv4"/>
+<address addr="E4:11:5B:12:D4:8E" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+</hostnames>
+<times srtt="200" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.7" addrtype="ipv4"/>
+<address addr="F0:4D:A2:3C:BC:59" addrtype="mac" vendor="Dell"/>
+<hostnames>
+</hostnames>
+<times srtt="180" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.8" addrtype="ipv4"/>
+<address addr="D4:AE:52:EA:6A:28" addrtype="mac" vendor="Dell"/>
+<hostnames>
+</hostnames>
+<times srtt="1123" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.9" addrtype="ipv4"/>
+<address addr="4C:1F:CC:45:7F:A0" addrtype="mac" vendor="Huawei Technologies Co."/>
+<hostnames>
+</hostnames>
+<times srtt="13043" rttvar="13043" to="100000"/>
+</host>
+<runstats><finished time="1490622567" timestr="Mon Mar 27 21:49:27 2017" elapsed="0.27" summary="Nmap done at Mon Mar 27 21:49:27 2017; 10 IP addresses (9 hosts up) scanned in 0.27 seconds" exit="success"/><hosts up="9" down="1" total="10"/>
+</runstats>
+</nmaprun>

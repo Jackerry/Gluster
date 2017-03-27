@@ -1,3 +1,4 @@
+<!-- 用于添加/删除用户的界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>

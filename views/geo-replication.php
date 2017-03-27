@@ -1,3 +1,4 @@
+<!-- 用于异地备份geo-replication 界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>

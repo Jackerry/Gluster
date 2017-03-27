@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Mon Mar 27 21:36:41 2017 as: nmap -sP -oX edit_ip.xml 192.168.150.10 -->
+<nmaprun scanner="nmap" args="nmap -sP -oX edit_ip.xml 192.168.150.10" start="1490621801" startstr="Mon Mar 27 21:36:41 2017" version="6.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1490621801" timestr="Mon Mar 27 21:36:41 2017" elapsed="0.44" summary="Nmap done at Mon Mar 27 21:36:41 2017; 1 IP address (0 hosts up) scanned in 0.44 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

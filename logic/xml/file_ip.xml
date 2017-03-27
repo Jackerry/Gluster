@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Mon Mar 27 21:34:45 2017 as: nmap -sP -oX file_ip.xml 192.168.150.9 -->
+<nmaprun scanner="nmap" args="nmap -sP -oX file_ip.xml 192.168.150.9" start="1490621685" startstr="Mon Mar 27 21:34:45 2017" version="6.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.150.9" addrtype="ipv4"/>
+<address addr="4C:1F:CC:45:7F:A0" addrtype="mac" vendor="Huawei Technologies Co."/>
+<hostnames>
+</hostnames>
+<times srtt="2218" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1490621685" timestr="Mon Mar 27 21:34:45 2017" elapsed="0.04" summary="Nmap done at Mon Mar 27 21:34:45 2017; 1 IP address (1 host up) scanned in 0.04 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

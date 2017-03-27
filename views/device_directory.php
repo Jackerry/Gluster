@@ -1,3 +1,4 @@
+<!-- 用于存储设备、目录管理 界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,4 @@
+<!-- 用于setting_pools.php集群配置中 网络设置 按钮的界面 -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -9,12 +10,12 @@
                 <div class="modal-body">
                     <div class="input-group">
                         <span class="input-group-addon">start</span>
-                        <input class="form-control" type="text" id="start_ip_text" name="start_ip_1" value="<?php if(isset($_SESSION['start_ip'])){echo $_SESSION['start_ip'];}else echo '192.168.150.10'?>" >
+                        <input class="form-control" type="text" id="start_ip_text" name="start_ip_1" value="<?php if(isset($_SESSION['start_ip'])){echo $_SESSION['start_ip'];}else echo $_SESSION['default_start_ip'];?>" >
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon">end</span>
-                        <input class="form-control" type="text" id="end_ip_text" name="end_ip_1" value="<?php if(isset($_SESSION['end_ip'])){echo $_SESSION['end_ip'];}else echo '192.168.150.210'?>" >
+                        <input class="form-control" type="text" id="end_ip_text" name="end_ip_1" value="<?php if(isset($_SESSION['end_ip'])){echo $_SESSION['end_ip'];}else echo $_SESSION['default_start_ip'];?>" >
                     </div>
                 </div>
                 <div class="modal-footer">

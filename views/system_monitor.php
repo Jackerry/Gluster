@@ -1,3 +1,4 @@
+<!-- 用于系统监控 system_monitor.php 界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>

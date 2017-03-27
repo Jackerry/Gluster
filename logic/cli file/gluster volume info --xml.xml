@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cliOutput>
+  <opRet>0</opRet>
+  <opErrno>0</opErrno>
+  <opErrstr/>
+  <volInfo>
+    <volumes>
+      <volume>
+        <name>test-volume-1</name>
+        <id>d4d00720-e4a2-460c-956d-5cd0ab1c1f05</id>
+        <status>2</status>
+        <statusStr>Stopped</statusStr>
+        <snapshotCount>0</snapshotCount>
+        <brickCount>3</brickCount>
+        <distCount>1</distCount>
+        <stripeCount>1</stripeCount>
+        <replicaCount>1</replicaCount>
+        <arbiterCount>0</arbiterCount>
+        <disperseCount>0</disperseCount>
+        <redundancyCount>0</redundancyCount>
+        <type>0</type>
+        <typeStr>Distribute</typeStr>
+        <transport>0</transport>
+        <xlators/>
+        <bricks>
+          <brick uuid="657d46f5-6ad3-45fb-b806-d16a2e709f59">192.168.150.76:/data/brick1<name>192.168.150.76:/data/brick1</name><hostUuid>657d46f5-6ad3-45fb-b806-d16a2e709f59</hostUuid><isArbiter>0</isArbiter></brick>
+          <brick uuid="66d2b876-8a05-400e-9a54-db331266799e">192.168.150.50:/data/brick1<name>192.168.150.50:/data/brick1</name><hostUuid>66d2b876-8a05-400e-9a54-db331266799e</hostUuid><isArbiter>0</isArbiter></brick>
+          <brick uuid="3950836c-cc4b-4b31-b768-fa52934bb5bc">192.168.150.97:/data/brick1<name>192.168.150.97:/data/brick1</name><hostUuid>3950836c-cc4b-4b31-b768-fa52934bb5bc</hostUuid><isArbiter>0</isArbiter></brick>
+        </bricks>
+        <optCount>3</optCount>
+        <options>
+          <option>
+            <name>nfs.disable</name>
+            <value>on</value>
+          </option>
+          <option>
+            <name>performance.readdir-ahead</name>
+            <value>on</value>
+          </option>
+          <option>
+            <name>transport.address-family</name>
+            <value>inet</value>
+          </option>
+        </options>
+      </volume>
+      <count>1</count>
+    </volumes>
+  </volInfo>
+</cliOutput>

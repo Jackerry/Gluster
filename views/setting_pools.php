@@ -1,3 +1,4 @@
+<!-- 用于集群配置 界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +9,7 @@
 
 	<?php include '../logic/setting_pools.php'; ?>
 </head>
-<body>
+<body onLoad="reflash_ip_list()">
 	<!-- 引入页头 -->
 	<?php include './vice/header.php'; ?>
 	<!-- 中间部分 -->
@@ -22,9 +23,8 @@
 			<div class="container-right">
 				<br>
 				<div id="settingPools_div_first">
-			        <input  type="text" id="start_ip" disabled="disabled" value="<?php if(isset($_SESSION['start_ip'])){echo $_SESSION['start_ip'];}?>" />
-			   		<input  type="text" id="end_ip" disabled="disabled" value="<?php	if(isset($_SESSION['end_ip'])){echo $_SESSION['end_ip'];}?>
-			        " />
+			        <input  type="text" id="start_ip" disabled="disabled" value="<?php if(isset($_SESSION['start_ip'])){echo $_SESSION['start_ip'];}else echo $_SESSION['default_start_ip'];?>" />
+			   		<input  type="text" id="end_ip" disabled="disabled" value="<?php	if(isset($_SESSION['end_ip'])){echo $_SESSION['end_ip'];}else echo $_SESSION['default_end_ip'];?>" />
 			        <button class="button" id="btn"  data-toggle="modal" data-target="#myModal">网络设置</button>
 			        <!-- 模态框（Modal） -->
 			        <?php include './vice/internet_address.php'; ?>
@@ -51,7 +51,7 @@
 					
 					</td><td>
 					
-					当前可用gluster服务器节点列表
+					当前可用gluster服务器节点(<span id='gluster_list_count'></span>)
 					<div  id="settingPools_div_list_table">
 						<table id="gluster_sever_node_table">
 							<script type="text/javascript">
@@ -64,13 +64,15 @@
 							</script>
 						</table>
 					</div>
-					<input type="button" class="button" value="存储节点验证" onclick="if(viewVariable.sever_node_chosen!=null)storageNodeCheck(sever_node_chosen)">
+					<!--input type="button" class="button" value="存储节点验证" onclick="if(viewVariable.sever_node_chosen!=null)storageNodeCheck(sever_node_chosen)"-->
+                    <input type="button" class="button" value="存储节点验证" onclick="storageNodeCheck()">
 					
 					</td><td>
 					
-					网内主机列表
+					网内主机列表(总数：<span id='ip_list_count'></span>)
 					<div  id="settingPools_div_list_table">
 						<table id="innet_node_table">
+                        	
 							<script type="text/javascript">
 								viewVariable.innet_node_chosen = null;
 								viewVariable.setInnetNodeChosen=function (index){
@@ -81,8 +83,9 @@
 							</script>
 						</table>
 							</div>
-							<input type="button" class="button" value="全选" onclick="innetHostSelectAll()">
 							<input type="button" class="button" value="自动加入" onclick="innetHostAutoAdd()">
+                            <input type="button" class="button" value="全部加入" onclick="innetHostAllAdd()">
+
 							</td></tr>
 						</table>
 					</div>
@@ -93,8 +96,12 @@
 					<div id="settingPools_div_last_table">
 						<table>
 							<tr><td id="settingPools_last_table"><input class="button" type="button" value="自动探测" onclick="button_scan_ip()"></td></tr>
-							<tr><td id="settingPools_last_table"><input class="button" type="button" value="手动" onclick="button_manual()"></td></tr>
-							<tr><td id="settingPools_last_table"><input class="button" type="button" value="文件导入" onclick=""></td></tr>
+							<tr><td id="settingPools_last_table"><!--input class="button" type="button" value="手动编辑" onclick="button_manual()"--><button class="button" id="btn"  data-toggle="modal" data-target="#myModal2">手动编辑</button>
+			        <!-- 模态框（Modal） -->
+			        <?php include './vice/edit_address.php'; ?></td></tr>
+							<tr><td id="settingPools_last_table"><!--input class="button" type="button" value="文件导入" onclick=""--><button class="button" id="btn"  data-toggle="modal" data-target="#myModal3">文件导入</button>
+			        <!-- 模态框（Modal） -->
+			        <?php include './vice/upload_file_address.php'; ?></td></tr>
 						</table>
 					</div>
 				</div>			

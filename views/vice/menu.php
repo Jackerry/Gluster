@@ -1,3 +1,4 @@
+<!-- 用于菜单栏 -->
 <?php
 	$menu_name = '顶层菜单';
 	$menu_storage = 'menu_storage存储集群管理';

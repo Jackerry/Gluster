@@ -1,3 +1,4 @@
+<!-- 用于系统初始安装界面 -->
 <?php include '../logic/start.php'; ?>
 <!DOCTYPE html>
 <html>
