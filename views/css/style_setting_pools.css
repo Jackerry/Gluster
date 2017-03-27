@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+
+#settingPools_div_first {
+    padding:12px 20px;
+	text-align: right;
+}
+
+#settingPools_div_list {
+	padding-left: 20px;
+	vertical-align:top;
+}
+#settingPools_div_list_table {
+	width: 200px;
+	height:300px;
+	border: 1px solid rgba(0,0,0,.1);
+	margin-top: 8px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-radius: 3px;
+}
+#1 {
+	margin-top:10px;
+}
+#settingPools_div_list_div_buttom{
+	margin-top: 10px;
+	
+}
+#settingPools_div_list_buttom {
+	text-decoration:none;  
+    background-color: #e3ddd1; 
+    margin-top: 50px;
+    padding: 8px 30px 8px 30px;  
+    font-size:16px;  
+    font-family: proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	
+}
+
+#settingPools_div_last {
+
+	padding: 12px 20px;
+	text-align: right;
+}
+#settingPools_div_last_table {
+	
+
+    vertical-align:top;
+}
+#settingPools_last_table {
+	text-align: right;
+}
+#settingPools_hr{
+	height: 1px;
+	border: none;
+	background-color:rgba(200, 200, 200, 0.7);
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+*{
+	font-family: "微软雅黑";
+	text-align:left;
+}
+#settingPools_div_list_table tr .chosen{
+	background-color: #f6f4f0;
+}

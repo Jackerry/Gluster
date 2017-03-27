@@ -1,0 +1,56 @@
+
+.container-right .backgroudCard{
+	background-color: white;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 5px;
+}
+.container-right .inner_box{
+	padding: 10px 20px;
+	display: flex;
+}
+.container-right .inner_box .left_box{
+	width: 35%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container-right .inner_box .right_box{
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container-right .inner_box .text{
+	margin-top: 5px;
+	line-height: 50px;
+}
+.border{
+	border: 1px solid rgba(0,0,0,.1);
+}
+.flex{
+	display: flex;
+}
+.center{
+	text-align: center;
+	margin:0 auto;
+}
+.box{
+	padding: 5px;
+}
+.container-right .inner_box .card{
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius:3px;
+	min-height: 300px;
+}
+.container-right .inner_box .button{
+	margin:0 auto;
+	margin-bottom: 15px;
+}
+.container-right  .bottom_box{
+	padding-left: 120px;
+	padding-right: 120px;
+}
+.container-right .inner_box .card .cardLine{
+	line-height: 25px;
+}
+.leftMenu{
+	margin-bottom: 10px;
+}
